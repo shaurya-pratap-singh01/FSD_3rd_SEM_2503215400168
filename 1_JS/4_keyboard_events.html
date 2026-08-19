@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-size: 500%;
+            background-position: -1500px -500px;
+        }
+        #form{
+            width: 300px;
+            margin: 50px auto 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 25px;
+            background-color: yellowgreen;
+            box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.1);
+        }
+        p,input{
+            font-size: 20px;
+        }
+        input{
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: inset -3px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="form">
+        <h1 id="title">Keyboard Events</h1>
+        <p>onKeyDown</p>
+        <input type="text" onkeydown="alert(this.value);">
+        <p>onKeyUp</p>
+        <input type="text" onkeyup="alert(this.value);">
+        <p>onKeyPress</p>
+        <input type="text" onkeypress="alert(this.value);">
+    </div> -->
+    <div id="form">
+        <h1 id="title">Keyboard Events</h1>
+        <p>onKeyDown</p>
+        <input type="text" onkeydown="document.getElementById('form').style.backgroundColor = this.value;">
+        <p>onKeyUp</p>
+        <input type="text" onkeyup="document.getElementById('form').style.backgroundColor = this.value;">
+        <p>onKeyPress</p>
+        <input type="text" onkeypress="document.getElementById('form').style.backgroundColor = this.value;">
+    </div>
+</body>
+</html>

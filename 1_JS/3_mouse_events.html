@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        #box1{
+            height: 100%;
+            width: 300px;
+            background-color: antiquewhite;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: auto;
+            border: 5px solid burlywood;
+        }
+    </style>
+    <script>
+        function eventcall(){
+            alert("This is a mouse event");
+        }
+    </script>
+</head>
+<body>
+    <div id="box1" onclick="eventcall()">
+
+        Click Me
+
+    </div>
+
+    <div id="box1">
+        <button ondblclick="eventcall()">Double Click Me</button>
+
+        <button oncontextmenu="eventcall()">Right Click Me</button>
+    </div>
+
+
+    <div id="box1">
+        <p onmouseover="eventcall()">Hover over this text to trigger the event</p>
+
+        <p onmouseout="eventcall()">Move your mouse out of this text to trigger the event</p>
+
+        <p onmousedown="eventcall()">Press and hold the mouse button down to trigger the event</p>
+
+        <p onmouseup="eventcall()">Release the mouse button to trigger the event</p>
+    </div>
+</body>
+</html>

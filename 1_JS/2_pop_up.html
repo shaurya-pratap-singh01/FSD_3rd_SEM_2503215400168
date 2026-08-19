@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-ups</title>
+</head>
+<body>
+    <script>
+
+        //alert pop-up
+        alert("Hello World");
+
+        //confirm pop-up
+        let result = confirm("Are you sure you want to delete this file?");
+        if(result){
+            document.write("File deleted successfully ");
+        }
+        else{
+            document.write("File deletion cancelled ");
+        }
+
+        //prompt pop-up
+        let name = prompt("Please enter your name: ");
+        document.write(name);
+
+    </script>
+</body>
+</html>

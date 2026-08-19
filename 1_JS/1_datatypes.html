@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes</title>
+    <script>
+        // Datatypes in JavaScript (primitives)
+        let a = 20;              // number
+        let b = 101928377392n;   // bigint
+        let c = "dev";           // string
+        let d = true;            // boolean
+        let e = null;            // object due to a historical bug in JavaScript
+        let f = Symbol("id");    // symbol
+        let g;                   // undefined
+
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof c);
+        console.log(typeof d);
+        console.log(typeof e);
+        console.log(typeof f);
+        console.log(typeof g);
+
+        // Datatypes in JavaScript (non-primitives)
+
+        let h = [1, 2, 3, 4];                    // object (array)
+        console.log(typeof h);
+
+        let i = { name: "dev", age: 20 };        // object (key-value pairs)
+        console.log(typeof i);   
+
+        let myFunction = function(){                   
+            document.write("Hello World");
+        };
+        console.log(typeof myFunction);          //function
+        myFunction();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
