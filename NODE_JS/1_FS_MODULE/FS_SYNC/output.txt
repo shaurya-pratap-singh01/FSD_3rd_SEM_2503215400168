@@ -1,0 +1,2 @@
+Hello, this is a synchronous file write operation in Node.js.
+This line has been appended synchronously.
