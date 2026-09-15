@@ -1,3 +1,4 @@
+//EXPERIMENT 2
 const fs = require('fs');
 
 // Synchronous file write

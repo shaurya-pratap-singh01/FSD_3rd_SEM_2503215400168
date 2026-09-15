@@ -1,0 +1,2 @@
+welcome to asynchronous file write operation in node.js
+This line has been appended asynchronously.
